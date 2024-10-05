@@ -17,7 +17,7 @@ jstring my_native_get(JNIEnv *env, jclass clazz, jstring keyJ, jstring defJ) {
         hooked_result = env->NewStringUTF("Redmi");
     } else if (strcmp(key, "ro.product.mod_device") == 0) { // ro.product.mod_device=xagapro
         hooked_result = env->NewStringUTF("xagapro");
-      else if (strcmp(key, "ro.product.manufacturer") == 0) { // ro.product.manufacturer=Xiaomi
+    } else if (strcmp(key, "ro.product.manufacturer") == 0) { // ro.product.manufacturer=Xiaomi
         hooked_result = env->NewStringUTF("Xiaomi");
     } else if (strcmp(key, "ro.miui.region") == 0) { // ro.miui.region=CN
         hooked_result = env->NewStringUTF("CN");
